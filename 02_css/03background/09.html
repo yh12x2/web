@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션 배경</title>
+  <style>
+    div
+    {width: 500px;
+    height: 500px;
+  margin: 10px;}
+    .gr1{ background: linear-gradient(135deg, #e5e0dc 0%, #48443c 100%);}
+    .gr2 { background: conic-gradient(from 135deg at 50% 50%, #c2bcb7 0 0%, #b4a68e 100%, #c2bcb7 100%);}
+    .gr3{background: radial-gradient(circle at 50% 50%, #7c685a 0%, #fde68a 100%);
+   }
+    .gr4{background-color: #bab8b0;
+  background-image:
+    radial-gradient(circle at 50% 50%, #7c685a 0% 18%, transparent 34%),
+    radial-gradient(circle at 82% 18%, color-mix(in oklch, #7c685a 48%, white) 0 16%, transparent 32%),
+    radial-gradient(circle at 72% 76%, #bab8b0 0 18%, transparent 36%),
+    radial-gradient(circle at 24% 82%, color-mix(in oklch, #bab8b0 55%, black) 0 16%, transparent 34%);
+  background-blend-mode: screen, normal, multiply, normal;}
+    .gr5{  background-color: #6f6a52;
+  background-image:
+    radial-gradient(circle at 18% 28%, color-mix(in oklch, #4d4642 84%, white) 0 18%, transparent 42%),
+    radial-gradient(circle at 76% 18%, color-mix(in oklch, #6f6a52 76%, white) 0 15%, transparent 38%),
+    radial-gradient(circle at 78% 78%, color-mix(in oklch, #4d4642 42%, #6f6a52) 0 20%, transparent 44%),
+    conic-gradient(from 118deg at 46% 52%, color-mix(in oklch, #4d4642 42%, white), color-mix(in oklch, #6f6a52 70%, black), color-mix(in oklch, #4d4642 64%, #6f6a52), color-mix(in oklch, #4d4642 42%, white));
+  background-blend-mode: screen, normal, overlay, normal;}
+    .gr6{background-color: #6f6a52;
+  background-image:
+    linear-gradient(118deg, rgba(255,255,255,.62), transparent 22%, rgba(255,255,255,.18) 42%, transparent 68%),
+    radial-gradient(circle at 16% 20%, color-mix(in oklch, #4d4642 82%, white) 0 16%, transparent 36%),
+    conic-gradient(from 118deg at 62% 46%, #4d4642, color-mix(in oklch, #4d4642 40%, #6f6a52), #6f6a52, color-mix(in oklch, #6f6a52 42%, white), #4d4642);
+  background-blend-mode: screen, lighten, normal;}
+    
+  </style>
+</head>
+<body>
+  
+</body>
+<div class="gr1"></div>
+<div class="gr2"></div>
+<div class="gr3"></div>
+<div class="gr4"></div>
+<div class="gr5"></div>
+<div class="gr6"></div>
+</html>

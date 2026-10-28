@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Gasoek+One&family=Gugi&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 1. hsl / 2.rgb / 3.16진수/ 4.rgba  구글웹폰트 4개 */
+.ul1 {
+  background-color: hsl(208, 83%, 65%);
+  font-family: "Chiron GoRound TC", sans-serif;
+}
+
+.ul2 {
+  background-color: rgb(93 201 204);
+  ;
+  font-family: "Gasoek One", sans-serif;
+}
+
+.ul3 {
+  background-color: #f1b0b0;
+  font-family: "Gugi", sans-serif;
+}
+
+.ul4 {
+  background-color: rgba(144, 203, 255, 0.5);
+  font-family: "Chiron Hei HK", sans-serif;
+  ;
+}

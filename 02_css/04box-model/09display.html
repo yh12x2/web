@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      margin: 20px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    img {
+      width: 300px;
+    }
+
+    #inline img:nth-child(2) {
+      visibility: hidden;
+    }
+
+    #block img {
+      display: block;
+    }
+
+    #block img:nth-child(2){
+      display: none;
+    }
+    ul{
+      width: 500px;
+      margin: 0 auto;
+      background: #ccc;
+    }
+    li{
+      background: khaki;
+      width: 100px;
+      display: inline;
+      display: inline-block;
+    }
+    /* a는 inline, li는 block */
+    a{
+      color: inherit;
+      text-decoration: none;
+      background: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="inline">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+  </div>
+  <div id="block">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+    <img src="https://waikei.co.kr/web/upload/NNEditor/20251106/mobile/524f0d2265a4e164c748b3fd2bb319ef_1762416702.jpg"
+      alt="신유">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="">메뉴1</a></li>
+      <li><a href="">메뉴2</a></li>
+      <li><a href="">메뉴3</a></li>
+      <li><a href="">메뉴4</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>
