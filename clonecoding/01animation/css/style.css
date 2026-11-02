@@ -21,6 +21,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .ir {
@@ -101,6 +102,8 @@ section {
 
 section img {
   position: absolute;
+  display: block;
+  max-width: 100%;
 }
 
 .sky .sun {
@@ -194,8 +197,7 @@ section img {
 .town_night {
   bottom: 0;
   left: 40px;
-}
-
+} 
 .town_day {
   bottom: 0;
   left: 40px;
@@ -224,7 +226,7 @@ section img {
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 
