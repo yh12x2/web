@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 선언 방식 3종 - 익명함수(표현식)</title>
+</head>
+<body>
+  <script>
+    const test1 = '함수 선언 전 호출 에러';
+    const test2 = '함수 선언 후 호출만 가능';
+    //printMsg(test1);
+    let printMsg = function(msg){
+      console.log(`함수 호출 메시지 : ${msg}`);
+    }
+     printMsg(test2);
+
+  </script>
+</body>
+</html>
