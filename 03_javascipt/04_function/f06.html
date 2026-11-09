@@ -10,16 +10,16 @@
 <body>
   <script>
     (function () {
-      life()
+      life();
     })();
 
     function life() {
-      console.log('즉시실행함수1')
+      console.log('즉시실행함수1');
     }
-    let instant = function(a,b){
+    let instant = (function (a, b) {
       console.log('즉시실행함수2 : ' + a + b);
-      return a+b;
-    }(1,2);
+      return a + b;
+    })(1, 2);
     console.log(instant);
   </script>
 </body>
