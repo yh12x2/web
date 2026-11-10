@@ -121,8 +121,8 @@ $temp.innerHTML =
   $jsPosition.offsetTop : ${$jsPosition.offsetTop},
 </div>
 <div>
- $jsPosition.clientLeft : ${$jsPosition.clientLeft},
- $jsPosition.clientTop : ${$jsPosition.clientTop},
+  $jsPosition.clientLeft : ${$jsPosition.clientLeft},
+  $jsPosition.clientTop : ${$jsPosition.clientTop},
 </div>
 `;
 
