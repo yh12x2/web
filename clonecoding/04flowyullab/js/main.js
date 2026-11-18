@@ -48,7 +48,7 @@ const totalEl = document.querySelector('.main_visual .pager .txt_box span:last-o
 const getTotal = () => mainSlide.slidesEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)').length;
 
 //화면에 현재 번호와 전체 개수를 적어주는 함수
-const setPager = () =>{
+const setPager = () => {
   //realIndex는 0부터 시작하므로 화면에는 1을 더해서 보여줍니다
   const current = mainSlide.realIndex + 1;
   numEl.textContent = String(current);
@@ -59,11 +59,11 @@ const setPager = () =>{
 setPager();
 
 //슬라이드가 바뀔때마다 번호도 다시 바꿉니다
-mainSlide.on('slideChange',setPager);
+mainSlide.on('slideChange', setPager);
 
 //공지 영역의 새로 슬라이드
-    const infoSlide = new Swiper('.article_top .slide .swiper', {
-        direction: 'vertical',
+const infoSlide = new Swiper('.article_top .slide .swiper', {
+  direction: 'vertical',
   //마지막 슬라이드 다음에 다시 첫 슬라이드로 이어지게
   loop: true,
   //자동으로 다음 슬라이드로 넘어가게
@@ -71,4 +71,52 @@ mainSlide.on('slideChange',setPager);
     delay: 2500,
     disableOnInteraction: false,
   },
-      });
+});
+
+//contents 영역의 가로 자동 슬라이드
+const contenSlide = new Swiper('.contents .swiper', {
+  //카드 너비는 css에 맡기고 보이는 만큼 자동으로 보여줌
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  loop: true,
+  loopAdditionalSlides: 5,
+  speed: 9000,
+  autoplay: {
+    delay: 0,
+    dosableOnInteraction: false,
+  },
+  on: {
+    //계속 같은 속도로 흐르게 linear를 적용
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'liner'
+    },
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'liner'
+    },
+  },
+});
+
+//contents 영역의 가로 자동 슬라이드
+const blogSlide = new Swiper('.blog .swiper', {
+  //카드 너비는 css에 맡기고 보이는 만큼 자동으로 보여줌
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  loop: true,
+  loopAdditionalSlides: 5,
+  speed: 12000,
+  autoplay: {
+    delay: 0,
+    dosableOnInteraction: false,
+  },
+  on: {
+    //계속 같은 속도로 흐르게 linear를 적용
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'liner'
+    },
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'liner'
+    },
+  },
+});
